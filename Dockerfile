@@ -52,7 +52,7 @@ RUN \
  #acestream
  mkdir -p /opt/acestream.engine/ && \
  wget -o - https://sybdata.de/files/public-docs/acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
- tar -zxvf acestream_3.1.33_x86_webUI.tar.gz && \
+ tar -zxvf acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
  mv acestream.engine/ /opt/ && \
  find /opt/acestream.engine/androidfs/system -type d -exec chmod 755 {} \; && \
  find /opt/acestream.engine/androidfs/system -type f -exec chmod 644 {} \; && \
@@ -62,7 +62,7 @@ RUN \
  rm -rf \
 	/tmp/* \
 	aceproxy.zip \
-	acestream_3.1.33_x86_webUI.tar.gz
+	acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz
 
 # add local files
 COPY root/ /
