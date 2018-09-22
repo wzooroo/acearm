@@ -53,10 +53,10 @@ RUN \
  mkdir -p /opt/acestream.engine/ && \
  wget -o - https://sybdata.de/files/public-docs/acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
  tar -zxvf acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
- mv acestream.engine/ /opt/ && \
- find /opt/acestream.engine/androidfs/system -type d -exec chmod 755 {} \; && \
- find /opt/acestream.engine/androidfs/system -type f -exec chmod 644 {} \; && \
- chmod 755 /opt/acestream.engine/androidfs/system/bin/* /opt/acestream.engine/androidfs/acestream.engine/python/bin/python && \
+ mv acestrem.engine/ /opt/ && \
+ find /opt/acestrem.engine/androidfs/system -type d -exec chmod 755 {} \; && \
+ find /opt/acestrem.engine/androidfs/system -type f -exec chmod 644 {} \; && \
+ chmod 755 /opt/acestrem.engine/androidfs/system/bin/* /opt/acestrem.engine/androidfs/acestream.engine/python/bin/python && \
 
 # cleanup
  rm -rf \
@@ -66,7 +66,7 @@ RUN \
 
 # add local files
 COPY root/ /
-RUN chmod +x /opt/acestream.engine/start.sh
+RUN chmod +x /opt/acestrem.engine/start.sh
 
 
 # ports and volumes
