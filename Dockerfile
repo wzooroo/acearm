@@ -50,7 +50,7 @@ RUN \
  wget -o - https://github.com/pepsik-kiev/HTTPAceProxy/archive/master.zip -O aceproxy.zip && \
  unzip aceproxy.zip -d /opt/tv && \
  #acestream
- mkdir -p /opt/acestream.engine/ && \
+ mkdir -p /opt/acestrem.engine/ && \
  wget -o - https://sybdata.de/files/public-docs/acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
  tar -zxvf acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
  mv acestrem.engine/ /opt/ && \
