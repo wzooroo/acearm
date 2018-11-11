@@ -51,7 +51,7 @@ RUN \
  unzip aceproxy.zip -d /opt/tv && \
  #acestream
  mkdir -p /opt/acestrem.engine/ && \
- wget -o - https://sybdata.de/files/public-docs/acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
+ wget -o - https://sybdata.de/data/acestream/acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
  tar -zxvf acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz && \
  mv acestrem.engine/ /opt/acestrem.engine/ && \
  find /opt/acestrem.engine/androidfs/system -type d -exec chmod 755 {} \; && \
